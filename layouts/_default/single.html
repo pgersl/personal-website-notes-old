@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{partial "head.html" .}}
+</head>
+<body>
+    {{partial "loading.html"}}
+    <div class="content-container">
+        <header class="layout-element">
+            {{partial "site-header.html" .}}
+        </header>
+        <div class="flex-container">
+            <aside class="site-map layout-element">
+                {{partial "site-map.html" .}}
+            </aside>
+            <div class="flex-container toc-page-container">
+                <aside class="toc layout-element">
+                    {{partial "toc.html" .}}
+                </aside>
+                <main class="page layout-element">
+                    <div class="page-header">
+                        {{partial "page-header.html" .}}
+                    </div>
+                    <div class="page-content">{{.Content}}</div>
+                    <footer>
+                        {{partial "footer.html" .}}
+                    </footer>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
