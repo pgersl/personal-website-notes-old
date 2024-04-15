@@ -1,4 +1,4 @@
-baseURL = 'https://notes.pgersl.xyz/'
+baseURL = 'https://notes1.projects.pgersl.xyz/'
 languageCode = 'en-us'
 title = 'Petr Geršl - Notes'
 uglyURLs = 'false'
